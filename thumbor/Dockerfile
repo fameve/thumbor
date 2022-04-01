@@ -35,7 +35,7 @@ RUN pip install --trusted-host None --no-cache-dir \
    -r /app/requirements.txt
 
 COPY conf/thumbor.conf.tpl /app/thumbor.conf.tpl
-
+ENV THUMBOR_NUM_PROCESSES=1
 ADD conf/circus.ini.tpl /etc/
 RUN mkdir  /etc/circus.d /etc/setup.d
 ADD conf/thumbor-circus.ini.tpl /etc/circus.d/
