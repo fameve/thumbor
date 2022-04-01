@@ -2,7 +2,6 @@
 
 # Minimal Compact thumbor
 
-
 The quickest way to run [thumbor](https://github.com/thumbor/thumbor).
 
 Key Features and Goals:
